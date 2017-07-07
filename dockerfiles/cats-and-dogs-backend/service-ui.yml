@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: cats-and-dogs-backend-ui
+spec:
+  selector:
+    app: cats-and-dogs-backend
+  ports:
+    - protocol: TCP
+      port: 8080
+      nodePort: 30300
+  type: NodePort

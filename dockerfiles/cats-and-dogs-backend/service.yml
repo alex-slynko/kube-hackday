@@ -1,0 +1,26 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: cats-and-dogs-backend
+spec:
+  selector:
+    app: cats-and-dogs-backend
+  ports:
+    - protocol: TCP
+      port: 7007
+      name: "7007"
+    - protocol: TCP
+      port: 7008
+      name: "7008"
+    - protocol: TCP
+      port: 7009
+      name: "7009"
+    - protocol: TCP
+      port: 9001
+      name: "9001"
+    - protocol: TCP
+      port: 9002
+      name: "9002"
+    - protocol: TCP
+      port: 9003
+      name: "9003"

@@ -1,0 +1,22 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: cats-and-dogs-backend
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: cats-and-dogs-backend
+    spec:
+      containers:
+      - name: cats-and-dogs-backend
+        image: c2cnetworking/cats-and-dogs-backend
+        ports:
+        - containerPort: 8080
+        - containerPort: 7007
+        - containerPort: 7008
+        - containerPort: 7009
+        - containerPort: 9001
+        - containerPort: 9002
+        - containerPort: 9003
